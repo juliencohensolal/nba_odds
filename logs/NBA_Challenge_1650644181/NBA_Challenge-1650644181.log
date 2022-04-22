@@ -1,0 +1,17 @@
+2022-04-22 18:16:21,610 - root - INFO - Logging NBA_Challenge 1650644181
+2022-04-22 18:16:21,611 - __main__ - INFO - AAAND NOOOW... THE STARTING LINEUP... FOR THE WORLD CHAMPIONS.... THE NEW YORK KNICKS!
+2022-04-22 18:16:21,612 - __main__ - INFO - TASK: Train model which will later be used to predict a season's odds
+2022-04-22 18:16:21,612 - execution.oddsmaker - INFO - Load preprocessed data
+2022-04-22 18:16:21,615 - execution.oddsmaker - INFO - Use all seasons but 2018 and 2017
+2022-04-22 18:16:21,616 - execution.oddsmaker - INFO - Define model
+2022-04-22 18:16:21,617 - execution.oddsmaker - INFO - Evaluate model with cross-validation score
+2022-04-22 18:16:21,661 - execution.oddsmaker - INFO - FOLD 1 - 0.04sec - best iter : 109 - CV : 8.06089 on 102 rows
+2022-04-22 18:16:21,693 - execution.oddsmaker - INFO - FOLD 2 - 0.03sec - best iter : 82 - CV : 6.90318 on 101 rows
+2022-04-22 18:16:21,730 - execution.oddsmaker - INFO - FOLD 3 - 0.04sec - best iter : 93 - CV : 8.42093 on 101 rows
+2022-04-22 18:16:21,772 - execution.oddsmaker - INFO - FOLD 4 - 0.04sec - best iter : 128 - CV : 6.49839 on 101 rows
+2022-04-22 18:16:21,806 - execution.oddsmaker - INFO - FOLD 5 - 0.03sec - best iter : 78 - CV : 6.05822 on 101 rows
+2022-04-22 18:16:21,810 - execution.oddsmaker - INFO - ------------> CV score : 7.19001
+2022-04-22 18:16:21,810 - execution.oddsmaker - INFO - ------------> Average best iter : 98
+2022-04-22 18:16:21,810 - execution.oddsmaker - INFO - Train on whole dataset
+2022-04-22 18:16:21,842 - execution.oddsmaker - INFO - Save trained model
+2022-04-22 18:16:21,847 - execution.oddsmaker - INFO - Save predictions plot

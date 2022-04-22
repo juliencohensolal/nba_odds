@@ -1,0 +1,49 @@
+2022-04-22 18:15:25,539 - root - INFO - Logging NBA_Challenge 1650644125
+2022-04-22 18:15:25,540 - __main__ - INFO - AAAND NOOOW... THE STARTING LINEUP... FOR THE WORLD CHAMPIONS.... THE NEW YORK KNICKS!
+2022-04-22 18:15:25,541 - __main__ - INFO - TASK: Prepare data
+2022-04-22 18:15:25,541 - execution.preprocessor - INFO - Load data at the game level only
+2022-04-22 18:15:25,626 - execution.preprocessor - INFO - Sort and reindex
+2022-04-22 18:15:25,636 - execution.preprocessor - INFO - Correct comma sign in some numerical columns
+2022-04-22 18:15:25,743 - execution.preprocessor - INFO - Retrieve all available seasons
+2022-04-22 18:15:25,744 - execution.preprocessor - INFO - Number of available seasons: 19
+2022-04-22 18:15:25,745 - execution.preprocessor - INFO - Store number of regular season games for each season
+2022-04-22 18:15:25,746 - execution.preprocessor - INFO - Iterate on each season
+2022-04-22 18:15:25,746 - execution.preprocessor - INFO - --- SEASON: 2000 ---
+2022-04-22 18:15:25,751 - execution.preprocessor - INFO - Number of teams playing in 2000 :29
+2022-04-22 18:15:26,915 - execution.preprocessor - INFO - --- SEASON: 2001 ---
+2022-04-22 18:15:26,916 - execution.preprocessor - INFO - Number of teams playing in 2001 :29
+2022-04-22 18:15:27,973 - execution.preprocessor - INFO - --- SEASON: 2002 ---
+2022-04-22 18:15:27,974 - execution.preprocessor - INFO - Number of teams playing in 2002 :29
+2022-04-22 18:15:29,037 - execution.preprocessor - INFO - --- SEASON: 2003 ---
+2022-04-22 18:15:29,039 - execution.preprocessor - INFO - Number of teams playing in 2003 :29
+2022-04-22 18:15:30,109 - execution.preprocessor - INFO - --- SEASON: 2004 ---
+2022-04-22 18:15:30,110 - execution.preprocessor - INFO - Number of teams playing in 2004 :30
+2022-04-22 18:15:31,251 - execution.preprocessor - INFO - --- SEASON: 2005 ---
+2022-04-22 18:15:31,252 - execution.preprocessor - INFO - Number of teams playing in 2005 :30
+2022-04-22 18:15:32,337 - execution.preprocessor - INFO - --- SEASON: 2006 ---
+2022-04-22 18:15:32,338 - execution.preprocessor - INFO - Number of teams playing in 2006 :30
+2022-04-22 18:15:33,439 - execution.preprocessor - INFO - --- SEASON: 2007 ---
+2022-04-22 18:15:33,440 - execution.preprocessor - INFO - Number of teams playing in 2007 :30
+2022-04-22 18:15:34,569 - execution.preprocessor - INFO - --- SEASON: 2008 ---
+2022-04-22 18:15:34,570 - execution.preprocessor - INFO - Number of teams playing in 2008 :30
+2022-04-22 18:15:35,650 - execution.preprocessor - INFO - --- SEASON: 2009 ---
+2022-04-22 18:15:35,651 - execution.preprocessor - INFO - Number of teams playing in 2009 :30
+2022-04-22 18:15:36,750 - execution.preprocessor - INFO - --- SEASON: 2010 ---
+2022-04-22 18:15:36,751 - execution.preprocessor - INFO - Number of teams playing in 2010 :30
+2022-04-22 18:15:37,855 - execution.preprocessor - INFO - --- SEASON: 2011 ---
+2022-04-22 18:15:37,856 - execution.preprocessor - INFO - Number of teams playing in 2011 :30
+2022-04-22 18:15:38,840 - execution.preprocessor - INFO - --- SEASON: 2012 ---
+2022-04-22 18:15:38,840 - execution.preprocessor - INFO - Number of teams playing in 2012 :30
+2022-04-22 18:15:39,920 - execution.preprocessor - INFO - --- SEASON: 2013 ---
+2022-04-22 18:15:39,921 - execution.preprocessor - INFO - Number of teams playing in 2013 :30
+2022-04-22 18:15:41,026 - execution.preprocessor - INFO - --- SEASON: 2014 ---
+2022-04-22 18:15:41,027 - execution.preprocessor - INFO - Number of teams playing in 2014 :30
+2022-04-22 18:15:42,129 - execution.preprocessor - INFO - --- SEASON: 2015 ---
+2022-04-22 18:15:42,129 - execution.preprocessor - INFO - Number of teams playing in 2015 :30
+2022-04-22 18:15:43,324 - execution.preprocessor - INFO - --- SEASON: 2016 ---
+2022-04-22 18:15:43,326 - execution.preprocessor - INFO - Number of teams playing in 2016 :30
+2022-04-22 18:15:44,516 - execution.preprocessor - INFO - --- SEASON: 2017 ---
+2022-04-22 18:15:44,518 - execution.preprocessor - INFO - Number of teams playing in 2017 :30
+2022-04-22 18:15:45,636 - execution.preprocessor - INFO - --- SEASON: 2018 ---
+2022-04-22 18:15:45,637 - execution.preprocessor - INFO - Number of teams playing in 2018 :30
+2022-04-22 18:15:46,778 - execution.preprocessor - INFO - Save summary dataframe with all seasons

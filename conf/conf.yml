@@ -1,0 +1,22 @@
+# log_level : 50=CRITICAL, 40=ERROR, 30=WARNING, 20=INFO, 10=DEBUG, 0=NOTSET
+log_level: 20
+log_to_stream: True
+
+# Execution mode
+# Allowed: prepare, train, before_regular, before_playoffs
+mode: before_playoffs
+
+# Input files
+games_file: "data/raw/123a16617d2449b9806ca11a2f2749a9.snappy.parquet"
+boxscores_file: "data/raw/ef2db37a045d4c3eaed35507f880e820.snappy.parquet"
+
+# Training
+seed: 42
+n_folds: 5
+early_stopping: 20
+
+# Name of model (saved in folder 'models/')
+model_name: "model.pkl"
+
+# Highest authorized odds
+highest_odds: 300

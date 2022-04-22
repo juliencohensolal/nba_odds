@@ -1,0 +1,5 @@
+# Python artifacts
+__pycache__/
+
+# Original notebook
+notebooks/Technical Test NBA.ipynb

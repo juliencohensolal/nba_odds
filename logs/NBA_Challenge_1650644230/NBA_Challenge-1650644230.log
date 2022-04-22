@@ -1,0 +1,38 @@
+2022-04-22 18:17:10,928 - root - INFO - Logging NBA_Challenge 1650644230
+2022-04-22 18:17:10,929 - __main__ - INFO - AAAND NOOOW... THE STARTING LINEUP... FOR THE WORLD CHAMPIONS.... THE NEW YORK KNICKS!
+2022-04-22 18:17:10,929 - __main__ - INFO - TASK: Give championship odds before beginning of 2018/2019 playoffs
+2022-04-22 18:17:10,929 - execution.oddsmaker - INFO - Load preprocessed data
+2022-04-22 18:17:10,933 - execution.oddsmaker - INFO - Use 2018 regular season data to predict 2018 playoff results
+2022-04-22 18:17:10,947 - execution.oddsmaker - INFO - Perform inference
+2022-04-22 18:17:10,950 - execution.oddsmaker - INFO - Compute championship win percentage
+2022-04-22 18:17:10,951 - execution.oddsmaker - INFO - ----- CHAMPIONSHIP BETTING ODDS -----
+2022-04-22 18:17:10,953 - execution.oddsmaker - INFO - boston celtics - 17
+2022-04-22 18:17:10,953 - execution.oddsmaker - INFO - golden state warriors - 8
+2022-04-22 18:17:10,954 - execution.oddsmaker - INFO - charlotte hornets - 300
+2022-04-22 18:17:10,954 - execution.oddsmaker - INFO - detroit pistons - 39
+2022-04-22 18:17:10,954 - execution.oddsmaker - INFO - houston rockets - 18
+2022-04-22 18:17:10,955 - execution.oddsmaker - INFO - indiana pacers - 18
+2022-04-22 18:17:10,955 - execution.oddsmaker - INFO - los angeles clippers - 37
+2022-04-22 18:17:10,955 - execution.oddsmaker - INFO - new york knicks - 300
+2022-04-22 18:17:10,956 - execution.oddsmaker - INFO - orlando magic - 39
+2022-04-22 18:17:10,956 - execution.oddsmaker - INFO - phoenix suns - 165
+2022-04-22 18:17:10,956 - execution.oddsmaker - INFO - sacramento kings - 284
+2022-04-22 18:17:10,957 - execution.oddsmaker - INFO - san antonio spurs - 41
+2022-04-22 18:17:10,957 - execution.oddsmaker - INFO - toronto raptors - 8
+2022-04-22 18:17:10,958 - execution.oddsmaker - INFO - philadelphia 76ers - 34
+2022-04-22 18:17:10,958 - execution.oddsmaker - INFO - portland trail blazers - 16
+2022-04-22 18:17:10,959 - execution.oddsmaker - INFO - washington wizards - 300
+2022-04-22 18:17:10,959 - execution.oddsmaker - INFO - brooklyn nets - 57
+2022-04-22 18:17:10,959 - execution.oddsmaker - INFO - memphis grizzlies - 196
+2022-04-22 18:17:10,960 - execution.oddsmaker - INFO - milwaukee bucks - 8
+2022-04-22 18:17:10,960 - execution.oddsmaker - INFO - minnesota timberwolves - 300
+2022-04-22 18:17:10,961 - execution.oddsmaker - INFO - new orleans pelicans - 300
+2022-04-22 18:17:10,961 - execution.oddsmaker - INFO - utah jazz - 16
+2022-04-22 18:17:10,961 - execution.oddsmaker - INFO - chicago bulls - 106
+2022-04-22 18:17:10,962 - execution.oddsmaker - INFO - dallas mavericks - 175
+2022-04-22 18:17:10,962 - execution.oddsmaker - INFO - denver nuggets - 15
+2022-04-22 18:17:10,963 - execution.oddsmaker - INFO - los angeles lakers - 300
+2022-04-22 18:17:10,963 - execution.oddsmaker - INFO - miami heat - 87
+2022-04-22 18:17:10,963 - execution.oddsmaker - INFO - cleveland cavaliers - 300
+2022-04-22 18:17:10,964 - execution.oddsmaker - INFO - oklahoma city thunder - 16
+2022-04-22 18:17:10,964 - execution.oddsmaker - INFO - atlanta hawks - 300
