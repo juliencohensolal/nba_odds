@@ -30,10 +30,10 @@ Usage: *python .\src\main.py*
 With the root folder of this project as your working directory, this will run the `main.py` script using the `conf\conf.yml` file for experiment parameters. 
 
 The provided dataset is located in the `data\raw\` subfolder. There are 2 files: 
-* `123a16617d2449b9806ca11a2f2749a9.snappy.parquet`: game-level data
+* `123a16617d2449b9806ca11a2f2749a9.snappy.parquet`: team-level data
 * `ef2db37a045d4c3eaed35507f880e820.snappy.parquet`: player-level data
 
-First rows and columns of game-level data:
+First rows and columns of team-level data:
 ![Target vs Predictions plot](data/readme/gamelevel.JPG)
 
 First rows and columns of player-level data:
@@ -68,7 +68,7 @@ Here is how this application is structured:
 - `data`: 
     - `plots`: location of the plots generated during an execution of the script in "train" mode. It includes a "features importance" plot and a "prediction vs ground truth" plot
     - `processed`: location of the preprocessed data in CSV format, resulting from an execution of the script in "prepare" mode.
-    - `raw`: location of the 2 raw data files (game-level and player-level)
+    - `raw`: location of the 2 raw data files (team-level and player-level)
     - `readme`: location of the images illustrating this README.md file
 - `logs`: location of the log files which are saved for each execution of the script, no matter the mode.
 - `models`: location of the saved ML model resulting from an execution of the script in "train" mode.
@@ -84,14 +84,14 @@ Here is how this application is structured:
 To predict a NBA season, there are generally 3 granularity levels to consider.
 
 * Team-level stats: aggregate stats over a season at the team level. It is the simplest way of the 3, it doesn't require to know the composition of the roster day-to-day. It also gives the worst predictions out of the 3 methods.
-* Player-level stats: simulate each game based on the roster composition for the 2 teams in each game. Allows to take into account factors that are not available in game-level stats (key players injured for example).
+* Player-level stats: simulate each game based on the roster composition for the 2 teams in each game. Allows to take into account factors that are not available in team-level stats (key players injured for example).
 * Possession-level stats: simulate each game on the possession level. Requires predicting the number of possessions in a game, who is on the floor for each possession (so predicting substitution patterns), expected output of each possession.
 
 Obviously, the finer-grained the data is, the better results one could expect (but also the more difficult the modeling is).
 
 With the data at our disposal here, there is one major issue: we don't have *any* information about player movement in the 2018 offseason, such as trades, free agent signings, retirements, season-altering injuries. So if we were to try to model at the player level, we would be modeling the 2018/2019 season with team rosters dating from the previous season. Mainly for this reason (and also considering the time that was available for this project), it was decided to **model at the team level only**.
 
-With that choice in mind, one quick look at the available game-level data shows that we have the necessary features to model this prediction task using the renowned **[Four Factors](http://www.rawbw.com/~deano/articles/20040601_roboscout.htm)** methodology. This methodology, introduced by [Dean Oliver](https://en.wikipedia.org/wiki/Dean_Oliver_(statistician)) in 2002, posits that the combination of four team-level stats allows for fairly accurate predictions in terms of winning a basketball game at the NBA level. In accordance with [this follow-up article](https://squared2020.com/2017/09/05/introduction-to-olivers-four-factors/#:~:text=Four%20Factors%3A%20Score%2C%20Protect%2C,line%20as%20often%20as%20possible.) from [Justin Jacobs](https://en.wikipedia.org/wiki/Justin_Jacobs), we chose here to also model the opponent's four factors.
+With that choice in mind, one quick look at the available team-level data shows that we have the necessary features to model this prediction task using the renowned **[Four Factors](http://www.rawbw.com/~deano/articles/20040601_roboscout.htm)** methodology. This methodology, introduced by [Dean Oliver](https://en.wikipedia.org/wiki/Dean_Oliver_(statistician)) in 2002, posits that the combination of four team-level stats allows for fairly accurate predictions in terms of winning a basketball game at the NBA level. In accordance with [this follow-up article](https://squared2020.com/2017/09/05/introduction-to-olivers-four-factors/#:~:text=Four%20Factors%3A%20Score%2C%20Protect%2C,line%20as%20often%20as%20possible.) from [Justin Jacobs](https://en.wikipedia.org/wiki/Justin_Jacobs), we chose here to also model the opponent's four factors.
 
 A personal choice was made to not use the raw data for these factors, but to use the deviation compared to the mean for that season. Play styles evolve over time in the NBA (pace and 3-pts/game are up a lot today compared to 20 years ago for example). Since we intend to fit a model over almost two decades of play, we might learn wrong signals when using the raw numbers and comparing teams' factors vs each other in the same season makes more sense.
 
@@ -130,9 +130,9 @@ Ultimately, with this methodology we ended up with some very high odds for the v
 
 ## Performance
 
-Using a 5-fold cross-validation scheme, we end up with an **out-of-fold average RMSE** across the seasons 2000/2001 to 2017/2018 equal to about **7 playoff wins**. That is obviously fairly terrible! This wasn't unexpected though, considering we used low-granularity data and had limited time to devote to this project. 
+Using a 5-fold cross-validation scheme, we end up with an **out-of-fold average RMSE** across the seasons 2000/2001 to 2016/2017 equal to about **7 playoff wins**. That is obviously fairly terrible! This wasn't unexpected though, considering we used low-granularity data and had limited time to devote to this project. 
 
-Here is the plot of projected vs actual playoff wins for all teams in seasons 2000/2001 to 2017/2018:
+Here is the plot of projected vs actual playoff wins for all teams in seasons 2000/2001 to 2016/2017:
 
 ![Target vs Predictions plot](data/plots/1650644181_preds.jpg)
 
