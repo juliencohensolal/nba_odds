@@ -9,6 +9,11 @@ More precisely, given a specific dataset, there are 2 tasks:
 * Predict the championship odds before the start of the 2018/2019 *playoffs*
 
 
+## TLDR version
+
+A PowerPoint presentation is available in the `presentation\` subfolder with the key ideas.
+
+
 ## Instructions
 
 This application offers a single entry point, named `main.py`, located at the root of the `src` subfolder. Among features available for this script:
