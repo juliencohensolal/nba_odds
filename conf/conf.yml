@@ -4,7 +4,7 @@ log_to_stream: True
 
 # Execution mode
 # Allowed: prepare, train, before_regular, before_playoffs
-mode: before_playoffs
+mode: prepare
 
 # Input files
 games_file: "data/raw/123a16617d2449b9806ca11a2f2749a9.snappy.parquet"

@@ -149,7 +149,7 @@ class Oddsmaker(object):
             [0, max(max(postpro_df["targets"]), max(postpro_df["preds"]))], 
             [0, max(max(postpro_df["targets"]), max(postpro_df["preds"]))], 
             c = "red")
-        plt.savefig("plots/" + str(self.experiment_id) + "_preds.jpg")
+        plt.savefig("data/plots/" + str(self.experiment_id) + "_preds.jpg")
 
         # Save feature importance plot
         coefs = pd.DataFrame(sorted(zip(
@@ -159,7 +159,7 @@ class Oddsmaker(object):
         plt.figure(figsize=(20, 25))
         sns.barplot(x="Value", y="Feature", data=coefs.sort_values(by="Value", ascending=False))
         plt.tight_layout()
-        plt.savefig("plots/" + str(self.experiment_id) + "_feat_importance.jpg")
+        plt.savefig("data/plots/" + str(self.experiment_id) + "_feat_importance.jpg")
 
 
     def before_regular_predict(self):
